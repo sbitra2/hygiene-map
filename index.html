@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Showing Pixel and Tile Coordinates</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" />
+
+
+  </head>
+  <body>
+    <div class="header"><h2>Yelp: Hygienic Restaurants </h2></div>
+    <div class="actions">
+        <div>
+            <label>Select Cuisine: <select id="cuisine" >
+                <option value="" selected></option>
+                <option value="Active_life">Active Life</option>
+                <option value="Afghan">Afghan</option>
+                <option value="African">African</option>
+            </select></label>
+        </div>
+        <div style="margin-top:5px;">
+            <label style="">Select Zip: <select id="zip"></select></label>
+        </div>
+    </div>
+    <div id="map"></div>
+    <ul id="restaurant_reviews"></ul>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGlu0HGJQI6wSwQr_RziYI554tqMhAGgY&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
+  <script src="./js/script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.full.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+  </body>
+</html>

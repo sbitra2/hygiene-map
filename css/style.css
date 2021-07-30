@@ -1,0 +1,39 @@
+/* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+#map {
+  padding-top:50px;
+  height: 500px;
+  width:700px;
+  margin: 50px auto;
+}
+
+/* Optional: Makes the sample page fill the window. */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#coords {
+  background-color: black;
+  color: white;
+  padding: 5px;
+}
+
+.header{
+  width:700px;
+  margin: 10px auto;
+}
+
+.actions{
+    width:700px;
+    margin: 10px auto;
+}
+
+#restaurant_reviews > li{
+    list-style: none;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+
+}
